@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Spa at West Ashley | Medical Spa in Charleston, SC</title>
+<meta name="description" content="Charleston's medical spa where every treatment plan starts with understanding your skin. Complimentary Visia Skin Analysis for every new client. CoolSculpting, Facials, Injectables &amp; more.">
+<meta property="og:title" content="The Spa at West Ashley | Medical Spa in Charleston, SC">
+<meta property="og:description" content="Charleston's medical spa where every treatment plan starts with understanding your skin, not just treating it. Book your complimentary Visia Skin Analysis today.">
+<meta property="og:image" content="https://neonframewebdev.github.io/spa-west-ashley/assets/interior_3.png">
+<meta property="og:url" content="https://neonframewebdev.github.io/spa-west-ashley/">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Loader -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__inner">
+    <div class="loader__chip">
+      <img src="assets/logo.png" alt="" class="loader__logo">
+    </div>
+    <div class="loader__bar-wrap"><div class="loader__bar"></div></div>
+  </div>
+</div>
+
+<!-- Nav -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#hero" class="nav__brand" aria-label="The Spa at West Ashley home">
+      <div class="nav__logo-chip">
+        <img src="assets/logo.png" alt="The Spa at West Ashley logo">
+      </div>
+    </a>
+    <nav class="nav__links" id="navLinks" aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#treatments">Treatments</a>
+      <a href="#team">Our Team</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="https://www.vagaro.com/thespaatwestashley" target="_blank" rel="noopener" class="btn btn--teal nav__book">Book Now</a>
+    <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- Hero -->
+<section class="hero" id="hero">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="hero__inner">
+    <div class="hero__accent-rule" aria-hidden="true"></div>
+    <h1 class="hero__headline">Healthy, glowing skin starts with renewal from within.</h1>
+    <p class="hero__sub">Charleston's only med spa where every treatment plan starts with understanding your skin, not just treating it. Complimentary Visia Skin Analysis for every new client.</p>
+    <div class="hero__cta-row">
+      <a href="https://www.vagaro.com/thespaatwestashley" target="_blank" rel="noopener" class="btn btn--teal">Book Your Appointment</a>
+      <a href="#team" class="btn btn--ghost">Meet the Team</a>
+    </div>
+  </div>
+</section>
+
+<!-- Social Proof Bar -->
+<div class="proof-bar" id="proof">
+  <div class="proof-bar__inner rise">
+    <div class="proof-bar__stat">
+      <span class="proof-bar__num">4.8 Stars</span>
+      <span class="proof-bar__label">Average Rating</span>
+    </div>
+    <div class="proof-bar__divider" aria-hidden="true"></div>
+    <div class="proof-bar__stat">
+      <span class="proof-bar__num">167</span>
+      <span class="proof-bar__label">Google Reviews</span>
+    </div>
+    <div class="proof-bar__divider" aria-hidden="true"></div>
+    <div class="proof-bar__stat">
+      <span class="proof-bar__num">Top Provider</span>
+      <span class="proof-bar__label">CoolSculpting in the South</span>
+    </div>
+  </div>
+</div>
+
+<!-- About -->
+<section class="about" id="about">
+  <div class="about__inner">
+    <div class="about__text">
+      <p class="eyebrow">West Ashley, Charleston SC</p>
+      <h2 class="about__headline">Confidence starts with trust.</h2>
+      <p>Jessica Luckie built The Spa at West Ashley around one idea: confidence starts with trust. Our patients aren't just appointments. Each one has a story, goals, and a journey that's entirely their own. Being part of that journey is the most rewarding part of what we do.</p>
+      <p>Our team brings serious clinical depth to every room. Jessica leads with 16 years in the medical field. Our medical director, Dr. Bush, trained at Duke and spent nine years directing the Emergency Medicine Residency Program at MUSC. Chris Miller RN has 33 years in nursing and 15 in aesthetics. Amanda Dantzler has 21 years in medical aesthetics. Marina Hackel brings 15 years as a licensed esthetician and massage therapist. That's not a list of credentials. That's the difference between a spa visit and a result.</p>
+      <div class="about__creds">
+        <p class="about__cred-line">Jessica Luckie, Med Spa Director &mdash; 16+ years in the medical field</p>
+        <p class="about__cred-line">Medical Director Dr. Bush, Duke University / East Carolina School of Medicine</p>
+      </div>
+    </div>
+    <div class="about__photo rise">
+      <img src="assets/staff_1.jpg" alt="The Spa at West Ashley team" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="services" id="services">
+  <div class="services__inner">
+    <p class="eyebrow eyebrow--gold">Treatments</p>
+    <h2 class="services__headline">What We Offer</h2>
+
+    <!-- Mobile fallback: native select shown below 480px via CSS -->
+    <div class="services__select-wrap">
+      <select id="servicesMobileSelect" aria-label="Choose treatment group">
+        <option value="spa">Spa Treatments</option>
+        <option value="medical">Medical Treatments</option>
+      </select>
+    </div>
+
+    <div class="services__tabs" id="servicesTabs" role="tablist">
+      <button class="tab-btn tab-btn--active" data-tab="spa" role="tab" aria-selected="true" aria-controls="tabSpa" id="btnSpa">Spa Treatments</button>
+      <button class="tab-btn" data-tab="medical" role="tab" aria-selected="false" aria-controls="tabMedical" id="btnMedical">Medical Treatments</button>
+    </div>
+
+    <!-- Spa Treatments -->
+    <div class="tab-panel" id="tabSpa" role="tabpanel" aria-labelledby="btnSpa">
+      <div class="services__grid" id="spaGrid">
+
+        <article class="card rise" style="--delay:0ms">
+          <div class="card__img"><img src="assets/treatment_2.png" alt="Japanese Head Spa treatment" loading="lazy"></div>
+          <div class="card__body">
+            <h3>Japanese Head Spa</h3>
+            <p>A full scalp cleanse and massage under a flowing teal-lit basin. Women's Signature $175. Men's from $100.</p>
+          </div>
+        </article>
+
+        <article class="card rise" style="--delay:80ms">
+          <div class="card__img"><img src="assets/treatment_4.jpg" alt="Facial treatment" loading="lazy"></div>
+          <div class="card__body">
+            <h3>Facials &amp; Esthetics</h3>
+            <p>Essential Anti-Aging to Intense Hydration to Complexion Clearing. Every facial starts with a complimentary Visia Skin Analysis. <span class="card__price">From $99</span></p>
+          </div>
+        </article>
+
+        <article class="card rise" style="--delay:160ms">
+          <div class="card__img"><img src="assets/interior_4.jpg" alt="HydraFacial treatment room" loading="lazy"></div>
+          <div class="card__body">
+            <h3>HydraFacial</h3>
+            <p>Signature, Deluxe, and Platinum levels with 20 targeted booster serums available. Cleanse, extract, hydrate.</p>
+          </div>
+        </article>
+
+        <article class="card rise" style="--delay:0ms">
+          <div class="card__img"><img src="assets/treatment_6.png" alt="Brow lamination treatment" loading="lazy"></div>
+          <div class="card__body">
+            <h3>Brow &amp; Lash</h3>
+            <p>Sculpted, defined brows and lashes. Lamination, tinting, and precision shaping by our licensed estheticians.</p>
+          </div>
+        </article>
+
+        <article class="card rise" style="--delay:80ms">
+          <div class="card__img"><img src="assets/interior_5.jpg" alt="Massage treatment table" loading="lazy"></div>
+          <div class="card__body">
+            <h3>Massage</h3>
+            <p>Therapeutic massage tailored to your needs by Marina Hackel, licensed massage therapist with 15+ years of experience.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- Medical Treatments -->
+    <div class="tab-panel tab-panel--hidden" id="tabMedical" role="tabpanel" aria-labelledby="btnMedical">
+      <div class="services__grid" id="medicalGrid">
+
+        <article class="card rise" style="--delay:0ms">
+          <div class="card__img"><img src="assets/treatment_9.jpg" alt="CoolSculpting Elite treatment" loading="lazy"></div>
+          <div class="card__body">
+            <h3>CoolSculpting Elite</h3>
+            <p>FDA-cleared body contouring from Briana Bagby, one of the Top CoolSculpting providers in the South. Built around your goals.</p>
+          </div>
+        </article>
+
+        <article class="card rise" style="--delay:80ms">
+          <div class="card__img"><img src="assets/treatment_3.jpg" alt="Microneedling SkinPen treatment" loading="lazy"></div>
+          <div class="card__body">
+            <h3>Microneedling / SkinPen</h3>
+            <p>FDA-cleared SkinPen microneedling with a free PRF upgrade, for a limited time. Texture, tone, and scarring.</p>
+          </div>
+        </article>
+
+        <article class="card rise" style="--delay:160ms">
+          <div class="card__img"><img src="assets/treatment_8.jpg" alt="Laser hair removal treatment" loading="lazy"></div>
+          <div class="card__body">
+            <h3>Soprano Ice Laser Hair Removal</h3>
+            <p>Nearly painless. Amanda Dantzler has been doing it for 21 years, and her clients say it's life-changing.</p>
+          </div>
+        </article>
+
+        <article class="card rise" style="--delay:0ms">
+          <div class="card__img"><img src="assets/interior_7.png" alt="YAG laser treatment room" loading="lazy"></div>
+          <div class="card__body">
+            <h3>PiXel8-RF / YAG Laser</h3>
+            <p>Radiofrequency microneedling for deeper skin remodeling. The Neck Package (3 sessions + ZO Peptide Serum) is $1,875.</p>
+            <span class="card__price">Neck Package $1,875</span>
+          </div>
+        </article>
+
+        <article class="card rise" style="--delay:80ms">
+          <div class="card__img"><img src="assets/staff_3.jpg" alt="Jessica Luckie, Med Spa Director" loading="lazy"></div>
+          <div class="card__body">
+            <h3>Medical Injectables</h3>
+            <p>Botox and Daxxify overseen by Dr. Bush. <span class="card__price">$9.99/unit (new patients)</span>. Dermal Fillers <span class="card__price">$100 off</span> for new patients.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <p class="services__financing">Financing available through CareCredit, Cherry, and PatientFi</p>
+    <div class="services__rule-line" aria-hidden="true"></div>
+
+    <div class="visia-callout rise">
+      <div class="visia-callout__text">
+        <strong>Complimentary Visia Skin Analysis</strong> &mdash; Know your skin before you treat it.
+      </div>
+      <a href="https://www.vagaro.com/thespaatwestashley" target="_blank" rel="noopener" class="btn btn--teal btn--sm">Claim Your Free Scan</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Japanese Head Spa Spotlight -->
+<section class="spotlight" id="treatments">
+  <div class="spotlight__img-panel">
+    <img src="assets/treatment_7.jpg" alt="Japanese Head Spa teal LED cascade" loading="lazy" class="spotlight__photo">
+  </div>
+  <div class="spotlight__text-panel">
+    <div class="spotlight__text-inner rise">
+      <p class="eyebrow eyebrow--gold">Signature Experience</p>
+      <h2 class="spotlight__headline">The Japanese Head Spa</h2>
+      <p class="spotlight__body">Our most talked-about treatment. A full scalp cleanse and massage under a flowing teal-lit basin that's as calming as it sounds. A favorite for brides, visitors, and anyone long overdue for something just for themselves.</p>
+      <p class="spotlight__body">Marina Hackel brings 15 years of expertise as a licensed esthetician and massage therapist to every session. This is unhurried, intentional care from someone who genuinely understands it.</p>
+      <p class="spotlight__price">Women's Signature <strong>$175</strong> &nbsp;|&nbsp; Men's from <strong>$100</strong></p>
+      <a href="https://www.vagaro.com/thespaatwestashley" target="_blank" rel="noopener" class="btn btn--teal">Reserve Your Appointment</a>
+    </div>
+  </div>
+</section>
+
+<!-- Team -->
+<section class="team" id="team">
+  <div class="team__band">
+    <img src="assets/staff_2.png" alt="The Spa at West Ashley, Charleston" loading="lazy" class="team__band-img">
+    <div class="team__band-fade" aria-hidden="true"></div>
+  </div>
+  <div class="team__inner">
+    <p class="eyebrow eyebrow--gold">Our Specialists</p>
+    <h2 class="team__headline">The Lowcountry is fortunate to have this team in one room.</h2>
+    <div class="team__grid">
+
+      <div class="team-card rise" style="--delay:0ms">
+        <div class="team-card__avatar">
+          <img src="assets/staff_3.jpg" alt="Jessica Luckie" loading="lazy">
+        </div>
+        <h3 class="team-card__name">Jessica Luckie</h3>
+        <p class="team-card__title">Med Spa Director</p>
+        <p class="team-card__bio">16 years in the medical field. Nursing and psychology degrees from Kennesaw State. Her approach: understand where you are, build a plan around where you want to go.</p>
+      </div>
+
+      <div class="team-card rise" style="--delay:80ms">
+        <div class="team-card__avatar">
+          <img src="assets/staff_4.jpg" alt="Briana Bagby" loading="lazy">
+        </div>
+        <h3 class="team-card__name">Briana Bagby</h3>
+        <p class="team-card__title">CoolSculpting Specialist</p>
+        <p class="team-card__bio">One of the Top CoolSculpting Elite providers in the South. Works around your schedule and your goals, not a generic plan.</p>
+      </div>
+
+      <div class="team-card rise" style="--delay:160ms">
+        <div class="team-card__avatar">
+          <img src="assets/staff_5.jpg" alt="Amanda Dantzler" loading="lazy">
+        </div>
+        <h3 class="team-card__name">Amanda Dantzler</h3>
+        <p class="team-card__title">Medical Aesthetics</p>
+        <p class="team-card__bio">21 years in medical aesthetics, specializing in laser hair removal and advanced skin treatments. Her clients say it's life-changing.</p>
+      </div>
+
+      <div class="team-card rise" style="--delay:0ms">
+        <div class="team-card__avatar">
+          <img src="assets/staff_6.jpg" alt="Marina Hackel" loading="lazy">
+        </div>
+        <h3 class="team-card__name">Marina Hackel</h3>
+        <p class="team-card__title">Licensed Esthetician &amp; Massage Therapist</p>
+        <p class="team-card__bio">15+ years as a licensed esthetician and massage therapist. Lead provider for the Japanese Head Spa and specialty facial treatments.</p>
+      </div>
+
+      <div class="team-card rise" style="--delay:80ms">
+        <div class="team-card__avatar">
+          <img src="assets/staff_7.jpg" alt="Dr. Bush, Medical Director" loading="lazy">
+        </div>
+        <h3 class="team-card__name">Dr. Bush</h3>
+        <p class="team-card__title">Medical Director</p>
+        <p class="team-card__bio">Duke University and East Carolina School of Medicine. Nine years directing the Emergency Medicine Residency Program at MUSC. Oversees all medical treatments.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="reviews" id="reviews">
+  <div class="reviews__inner">
+    <p class="eyebrow eyebrow--gold">Client Voices</p>
+    <h2 class="reviews__headline">What our clients say</h2>
+
+    <div class="carousel" id="reviewCarousel" aria-live="polite" aria-atomic="true">
+
+      <div class="carousel__slide carousel__slide--active" role="group" aria-label="Review 1 of 4">
+        <div class="review-card">
+          <div class="review-card__stars" aria-label="5 stars">
+            <span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          </div>
+          <blockquote class="review-card__quote">
+            <p>"Book the appointment! I've been doing EZ Gel for about a year now and it has changed my life. Chris has been so gracious and knowledgeable. She's talked through every step and I LOVE the results."</p>
+          </blockquote>
+          <cite class="review-card__name"><span aria-hidden="true">&#8212;</span> Sarah B.</cite>
+        </div>
+      </div>
+
+      <div class="carousel__slide" role="group" aria-label="Review 2 of 4">
+        <div class="review-card">
+          <div class="review-card__stars" aria-label="5 stars">
+            <span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          </div>
+          <blockquote class="review-card__quote">
+            <p>"Amazing experience for my bridal party and I... We all had Japanese Head Spa treatments and it exceeded all of our expectations. The atmosphere, staff, and Marina our treatment provider was top tier. 10/10 recommend."</p>
+          </blockquote>
+          <cite class="review-card__name"><span aria-hidden="true">&#8212;</span> Kayla C.</cite>
+        </div>
+      </div>
+
+      <div class="carousel__slide" role="group" aria-label="Review 3 of 4">
+        <div class="review-card">
+          <div class="review-card__stars" aria-label="5 stars">
+            <span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          </div>
+          <blockquote class="review-card__quote">
+            <p>"Briana gave me back my self confidence. She is an expert with CoolSculpting, knowing which areas to treat to give the best overall appearance. Briana listened to my story and helped me achieve my goals."</p>
+          </blockquote>
+          <cite class="review-card__name"><span aria-hidden="true">&#8212;</span> Tara M.</cite>
+        </div>
+      </div>
+
+      <div class="carousel__slide" role="group" aria-label="Review 4 of 4">
+        <div class="review-card">
+          <div class="review-card__stars" aria-label="5 stars">
+            <span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          </div>
+          <blockquote class="review-card__quote">
+            <p>"Amanda at The Spa At West Ashley has been doing my laser hair removal for over half a year and oh my gosh the difference it has made in my life. Nearly painless! Won't see anyone else."</p>
+          </blockquote>
+          <cite class="review-card__name"><span aria-hidden="true">&#8212;</span> Bay S.</cite>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="carousel__dots" id="carouselDots" aria-label="Review navigation">
+      <button class="dot dot--active" data-idx="0" aria-label="Go to review 1"></button>
+      <button class="dot" data-idx="1" aria-label="Go to review 2"></button>
+      <button class="dot" data-idx="2" aria-label="Go to review 3"></button>
+      <button class="dot" data-idx="3" aria-label="Go to review 4"></button>
+    </div>
+
+    <p class="reviews__aggregate">4.8 stars across 167 Google reviews</p>
+  </div>
+</section>
+
+<!-- Contact / Book -->
+<section class="contact" id="contact">
+  <div class="contact__inner">
+    <div class="contact__book rise">
+      <h2 class="contact__headline">Ready to Begin?</h2>
+      <p class="contact__subhead">Your first step is a conversation. Book online or give us a call.</p>
+      <div class="contact__cta-row">
+        <a href="https://www.vagaro.com/thespaatwestashley" target="_blank" rel="noopener" class="btn btn--white-outline">Book an Appointment</a>
+        <a href="https://promotion.thespawestashley.com/injectables" target="_blank" rel="noopener" class="btn btn--white-ghost">Injectables Promo</a>
+      </div>
+    </div>
+    <div class="contact__info rise">
+      <dl class="contact__details">
+        <div>
+          <dt>Hours</dt>
+          <dd>Mon&ndash;Thu 10am&ndash;6pm<br>Fri 10am&ndash;4pm<br>Sat by appointment</dd>
+        </div>
+        <div>
+          <dt>Address</dt>
+          <dd><a href="https://maps.google.com/?q=2+Carriage+Ln+Charleston+SC+29407" target="_blank" rel="noopener">2 Carriage Ln, 2nd Floor<br>Charleston, SC 29407</a></dd>
+        </div>
+        <div>
+          <dt>Phone</dt>
+          <dd><a href="tel:+18432259810">(843) 225-9810</a></dd>
+        </div>
+        <div>
+          <dt>Email</dt>
+          <dd><a href="mailto:thespa@westashleywellness.com">thespa@westashleywellness.com</a></dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+
+  <div class="contact__form-wrap">
+    <form class="contact__form" action="#" method="post" novalidate>
+      <div class="form-row">
+        <label for="formName">Name</label>
+        <input type="text" id="formName" name="name" placeholder="Your name" autocomplete="name">
+      </div>
+      <div class="form-row">
+        <label for="formEmail">Email</label>
+        <input type="email" id="formEmail" name="email" placeholder="your@email.com" autocomplete="email">
+      </div>
+      <div class="form-row">
+        <label for="formMessage">Message</label>
+        <textarea id="formMessage" name="message" rows="4" placeholder="What can we help you with?"></textarea>
+      </div>
+      <button type="submit" class="btn btn--white-outline form__submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="foot" id="foot">
+  <div class="foot__inner">
+    <div class="foot__brand">
+      <div class="foot__logo-wrap">
+        <img src="assets/logo.png" alt="The Spa at West Ashley" class="foot__logo">
+      </div>
+      <p class="foot__tagline">Discover where we can help you shine.</p>
+    </div>
+    <div class="foot__right">
+      <div class="foot__social">
+        <a href="https://www.facebook.com/thespawestashley" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+        <a href="https://www.instagram.com/thespawestashley" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+      </div>
+      <a href="https://www.clover.com/online-ordering/the-spa-at-west-ashley-charleston" target="_blank" rel="noopener" class="foot__gift">Give the Gift of Confidence</a>
+    </div>
+  </div>
+  <div class="foot__bottom">
+    <p class="foot__address">The Spa at West Ashley &nbsp;|&nbsp; 2 Carriage Ln, 2nd Floor, Charleston, SC 29407 &nbsp;|&nbsp; (843) 225-9810</p>
+    <p class="foot__copy">&copy; 2026 The Spa at West Ashley. Site by <a href="https://neonframewebdesign.com" target="_blank" rel="noopener">NeonFrame Web Design</a>.</p>
+  </div>
+</footer>
+
+<script src="main.js" type="module"></script>
+</body>
+</html>
